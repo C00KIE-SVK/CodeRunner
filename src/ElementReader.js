@@ -11,15 +11,19 @@ class ElementReader {
     }
 
     #splitContent() {
-        this.#itemsToRun = this.#getElementValue().split(";");
+        this.#itemsToRun = this.#getElementValue().split("");
+        console.log(this.#itemsToRun);
         for (const itemsToRunElement of this.#itemsToRun) {
-            console.log(itemsToRunElement);
+            eval(itemsToRunElement);
         }
 
     }
 
     runCode() {
-        this.#splitContent();
-        //eval(this.#getElementValue())
+
+
+
+        //this.#splitContent();
+        eval(this.#getElementValue())
     }
 }

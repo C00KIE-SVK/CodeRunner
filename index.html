@@ -7,8 +7,11 @@
 <body>
 <p>Working</p>
 <form >
-    <label for="test">First name:</label>
-    <input type="text" id="test" name="fname"><br><br>
+    <label>
+        <textarea id="test">
+            Enter the lines of code one per line
+        </textarea>
+    </label><br>
     <button style="width: 2cm;height: 1cm;" id="execute" type="button" onclick="elementReader.runCode()">Execute</button>
 </form>
 <script src="src/ElementReader.js"></script>
